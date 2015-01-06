@@ -11,45 +11,46 @@ puts (6*12)+5
 
 weather = "an absolutely beautiful day"
 # write the shortest possible code that will print out the string "Hello! Isn't it an absolutely beautiful day today?"
-print "Hello! Isn't it " + weather
-puts
+puts "Hello! Isn't it " + weather
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English what the code does.
-"3 + 2 is #{3+2}"
+puts "3 + 2 is #{3+2}"
 # => "3 + 2 is 5"
 # this code takes text and interpolates 3+2 (which equals 5)
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English why the code does what it does.
-"Five is #{5 > 4 ? 'greater' : 'less'} than four."
+puts "Five is #{5 > 4 ? 'greater' : 'less'} than four."
 # => "Five is greater than four."
 # this code evaluates the '5>4' expression, then if true interpolates to greater or if false interpolates to less - which is emedded inside of text
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English why the code does what it does.
-"Five is #{5 > 6 ? 'greater' : 'less'} than six."
+puts "Five is #{5 > 6 ? 'greater' : 'less'} than six."
 # => "Five is less than six."
 # this code evaluates the '5>6' expression, then if true interpolates to greater or if false interpolates to less - which is emedded inside of text
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English why the code what it does.
-"Five is #{5 == 100 ? '' : 'not '}the same as one hundred."
+puts "Five is #{5 == 100 ? '' : 'not '}the same as one hundred."
 # => "Five is not the same as one hundred"
 # this code compares whether the number 5 is the same as the number 100.  Since 5 is not the same as 100, the expression is false and is interpolated as 'not'
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English what the code does.
 [ 1, 2, 3, 4, 5].collect do |n|
-  n * 3
+  puts n * 3
 end
 # => [3,6,9,12,15]
 # this code takes the array [1,2,3,4,5] and the iterator "collect" is invoked and each value in the array is multiplied by 3
 
 # beginning with a list of the numbers 3, -2, 7.5, and 90, make a list containing their absolute values.
 [3, -2, 7.5, 90].collect do |n|
-	n.abs
+	puts n.abs
 end
+# => [3,2,7.5,90]
+# this code takes the array [3,-2,7.5,90] and the iterator "collect" is invoked and then the absolute value method is called on each value.
 
 # Add a comment after the following code block showing its return value.
 # Then add a second comment explaining in English what the code does.
