@@ -88,8 +88,12 @@ puts students.sort_by {|x| x.length}
 # Add a comment after the following line of code showing its return value.
 # Then add a second comment explaining in English what the code does.  
 %w(Joe Kelly Spencer Peter Ivan Andell Angela Jeff Brian).partition{|name| name.length == 5 }
+# => [["Kelly", "Peter", "Brian"], ["Joe", "Ivan", "Andell", "Angela", "Jeff"]]
+# The method partition is called on the array and creates an array with 2 objects - one object is an array with 5 letter strings and the other array is strings that are not equal to 5 letter strings
 
 # Split the above list of names into a group that starts with 'J' and a group that doesn't.
+puts
+puts %w(Joe Kelly Spencer Peter Ivan Andell Angela Jeff Brian).partition{|name| name =~  /\J/  }
 
 president_birthdays = { 
     'Abraham Lincoln' => 'February 12, 1809', 
@@ -98,6 +102,8 @@ president_birthdays = {
     'Ronald Reagan' => 'February 6, 1911' 
   }
 # write code to access George Washington's birthday from the hash.
+puts
+puts president_birthdays['George Washington']
 
 # Add a comment after the following block of code showing its return value.
 # Then add another comment explaining in English what the code does. 
