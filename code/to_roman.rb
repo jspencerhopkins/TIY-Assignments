@@ -24,8 +24,16 @@ class Fixnum
       "L" + (self - 50).to_roman  
     elsif self < 100
       "XC" + (self - 90).to_roman
-
-
+    elsif self < 400
+      "C" + (self - 100).to_roman
+    elsif self < 500
+      "CD" + (self - 400).to_roman
+    elsif self < 900
+      "D" + (self - 500).to_roman
+    elsif self < 1000
+      "CM" + (self - 900).to_roman  
+    else
+      "M" + (self - 1000).to_roman
     end
   end
 end
@@ -50,3 +58,9 @@ test 39.to_roman, "XXXIX"
 test 49.to_roman, "XLIX"
 test 89.to_roman, "LXXXIX"
 test 99.to_roman, "XCIX"
+test 399.to_roman, "CCCXCIX"
+test 499.to_roman, "CDXCIX"
+test 899.to_roman, "DCCCXCIX"
+test 999.to_roman, "CMXCIX"
+test 1000.to_roman, "M"
+
