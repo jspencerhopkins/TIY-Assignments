@@ -17,10 +17,18 @@
   4 / 2 = 2
 ```
 
-# Strings
-
-- single vs. double quotes
-- escape characters
+### `Strings`
+* **What does it mean?** groups of letters
+* **How do you make one?**  place characters in between single or double quotes
+* **Why would you want one of those?** text
+* **What can you do with a string?**
+```ruby
+  # You can print text:
+  puts 'Hello World!'
+  
+  # You can add strings together:
+  puts 'I like ' + 'apple pie.'
+```
 
 # Arrays
 
