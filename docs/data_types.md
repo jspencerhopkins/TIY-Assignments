@@ -18,9 +18,9 @@
 ```
 
 ### `Strings`
-* **What does it mean?** groups of letters
+* **What does it mean?** A string object holds and maipulates an arbitrary sequence of bytes, typically representing characters
 * **How do you make one?**  place characters in between single or double quotes
-* **Why would you want one of those?** text
+* **Why would you want one of those?** present text, get input from user
 * **What can you do with a string?**
 ```ruby
   # You can print text:
@@ -30,10 +30,26 @@
   puts 'I like ' + 'apple pie.'
 ```
 
-# Arrays
+### `Array`
+* **What does it mean?** Arrays are ordered, integer-indexed collections of any object.
+* **How do you make one?** `my_array = [1,2,3,4]` 
+* **Why would you want one of those?** to store an ordered list of objects
+* **What can you do with a range?**
+```ruby
+  # You can store names:
+  names = ['Ada', 'Belle', 'Chris']
 
-- ordered lists in brackets
-- using iterators
+  # You can select (print) objects from arrays:
+  puts names[1) #=> 'Belle'
+  
+  # You can iterate through them
+  names.each do |n|
+    puts "My friend is " + n
+  end
+  #=> 'My friend is Ada'
+  #=>'My friend is Belle'
+  #=>'My friend is Chris'
+  ```
 
 # Hashes
 
