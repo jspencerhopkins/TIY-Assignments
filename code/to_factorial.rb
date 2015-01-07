@@ -19,5 +19,7 @@ def test(actual_value, expectation)
   end
 end
 
-test 5.to_factorial, 120
-test 10.to_factorial, 3628800
+#test 5.to_factorial, 120
+#test 10.to_factorial, 3628800
+
+puts "6 factorial is #{6.to_factorial}"
