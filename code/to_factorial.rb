@@ -20,3 +20,4 @@ def test(actual_value, expectation)
 end
 
 test 5.to_factorial, 120
+test 10.to_factorial, 3628800
