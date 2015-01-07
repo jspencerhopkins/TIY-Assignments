@@ -111,6 +111,7 @@ president_birthdays.each do |key, value|
   puts "President #{key} was born on #{value}."
 end
 
+
 # Imagine you were talking to someone who missed today's class (and the prework). 
 # Write down how you would explain how to go about solving the next task. Then write code to solve it.
 # Modify the code to print out only the Presidents born during the 18th century. 
