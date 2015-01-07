@@ -7,47 +7,49 @@
 puts Math::PI > 22/7 #=> true
 
 # a person who's 6'5" is how many inches tall?
+puts
 puts (6*12)+5
 
 weather = "an absolutely beautiful day"
 # write the shortest possible code that will print out the string "Hello! Isn't it an absolutely beautiful day today?"
+puts
 puts "Hello! Isn't it " + weather
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English what the code does.
-puts "3 + 2 is #{3+2}"
+"3 + 2 is #{3+2}"
 # => "3 + 2 is 5"
 # this code takes text and interpolates 3+2 (which equals 5)
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English why the code does what it does.
-puts "Five is #{5 > 4 ? 'greater' : 'less'} than four."
+"Five is #{5 > 4 ? 'greater' : 'less'} than four."
 # => "Five is greater than four."
 # this code evaluates the '5>4' expression, then if true interpolates to greater or if false interpolates to less - which is emedded inside of text
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English why the code does what it does.
-puts "Five is #{5 > 6 ? 'greater' : 'less'} than six."
+"Five is #{5 > 6 ? 'greater' : 'less'} than six."
 # => "Five is less than six."
 # this code evaluates the '5>6' expression, then if true interpolates to greater or if false interpolates to less - which is emedded inside of text
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English why the code what it does.
-puts "Five is #{5 == 100 ? '' : 'not '}the same as one hundred."
+"Five is #{5 == 100 ? '' : 'not '}the same as one hundred."
 # => "Five is not the same as one hundred"
 # this code compares whether the number 5 is the same as the number 100.  Since 5 is not the same as 100, the expression is false and is interpolated as 'not'
 
 # Add a comment after the following code block showing its return value. 
 # Then add a second comment explaining in English what the code does.
 [ 1, 2, 3, 4, 5].collect do |n|
-  puts n * 3
+  n * 3
 end
 # => [3,6,9,12,15]
 # this code takes the array [1,2,3,4,5] and the iterator "collect" is invoked and each value in the array is multiplied by 3
 
 # beginning with a list of the numbers 3, -2, 7.5, and 90, make a list containing their absolute values.
 [3, -2, 7.5, 90].collect do |n|
-	puts n.abs
+	n.abs
 end
 # => [3,2,7.5,90]
 # this code takes the array [3,-2,7.5,90] and the iterator "collect" is invoked and then the absolute value method is called on each value.
@@ -61,24 +63,37 @@ end
 # this code selects the array and returns each value that contains the word 'David'
 
 # create a list of the names Joe, Kelly, Spencer, Peter, Ivan, Andell, Angela, Jeff to use for the next five tasks.
-students = ["Joe", "Kelly", "Spencer", "Peter", "Ivan", "Andell", "Angela", "Jeff"]
+puts
+puts students = ["Joe", "Kelly", "Spencer", "Peter", "Ivan", "Andell", "Angela", "Jeff"]
 
 # access the 5th name in the list
-students[4]
+puts
+puts students[4]
 
 # add my name to the end of the list
+students[students.length] = 'Brian'
 
 # make a list of the names in alphabetical order
+puts
+puts students.sort
 
 # make a list of the names in reverse alphabetical order
+puts
+puts students.sort.reverse
 
 # make a list of the names from shortest to longest
+puts
+puts students.sort_by {|x| x.length}
 
 # Add a comment after the following line of code showing its return value.
 # Then add a second comment explaining in English what the code does.  
 %w(Joe Kelly Spencer Peter Ivan Andell Angela Jeff Brian).partition{|name| name.length == 5 }
+# => [["Kelly", "Peter", "Brian"], ["Joe", "Ivan", "Andell", "Angela", "Jeff"]]
+# The method partition is called on the array and creates an array with 2 objects - one object is an array with 5 letter strings and the other array is strings that are not equal to 5 letter strings
 
 # Split the above list of names into a group that starts with 'J' and a group that doesn't.
+puts
+puts %w(Joe Kelly Spencer Peter Ivan Andell Angela Jeff Brian).partition{|name| name =~  /\J/  }
 
 president_birthdays = { 
     'Abraham Lincoln' => 'February 12, 1809', 
@@ -87,6 +102,8 @@ president_birthdays = {
     'Ronald Reagan' => 'February 6, 1911' 
   }
 # write code to access George Washington's birthday from the hash.
+puts
+puts president_birthdays['George Washington']
 
 # Add a comment after the following block of code showing its return value.
 # Then add another comment explaining in English what the code does. 

@@ -18,9 +18,9 @@
 ```
 
 ### `Strings`
-* **What does it mean?** groups of letters
+* **What does it mean?** A string object holds and maipulates an arbitrary sequence of bytes, typically representing characters
 * **How do you make one?**  place characters in between single or double quotes
-* **Why would you want one of those?** text
+* **Why would you want one of those?** present text, get input from user
 * **What can you do with a string?**
 ```ruby
   # You can print text:
@@ -30,31 +30,40 @@
   puts 'I like ' + 'apple pie.'
 ```
 
-# Arrays
-
-- ordered lists in brackets
-- using iterators
-
-# Hashes
-
-- Unordered lists in curly brackets 
-
-=======================================
-
-### `Range`
-* **What does it mean?** It's a sequence of numbers or letters that has no gaps in it.
-* **How do you make one?** `(7..11)` #contains 7, 8, 9, 10, and 11. 
-* **Why would you want one of those?** You could get every year since the Declaration of Independence was signed with `(1776..2015)`. Or if you want every day in February, that could be represented as `(1..28)`. You could even grab every letter of the alphabet with `('a'..'z')`.
+### `Array`
+* **What does it mean?** Arrays are ordered, integer-indexed collections of any object.
+* **How do you make one?** `my_array = [1,2,3,4]` 
+* **Why would you want one of those?** to store an ordered list of objects
 * **What can you do with a range?**
 ```ruby
-  # You can find if something is inside a range:
-  (1..10).include?(5) #=> true
-  (1..10).include?(300) #=> false
+  # You can store names:
+  names = ['Ada', 'Belle', 'Chris']
 
-  # You can find out how big it is:
-  (1..10).size #=> 10
-  (1776..2015).size #=> 240
+  # You can select (print) objects from arrays:
+  puts names[1] #=> 'Belle'
   
-  # You can iterate over it:
-  (13..19).each{|n| print "#{n} " } #=> 13 14 15 16 17 18 19
-```
+  # You can iterate through them
+  names.each do |n|
+    puts "My friend is " + n
+  end
+  #=> 'My friend is Ada'
+  #=>'My friend is Belle'
+  #=>'My friend is Chris'
+  ```
+
+### `Hash`
+* **What does it mean?** A hash is a dictionary-like collection of unique keys and their values.  Also called assoicative arrays, but where an Array uses integers as its index, a hash allows you to use any object type.
+* **How do you make one?** `my_array = [1,2,3,4]` 
+* **Why would you want one of those?** store keys and values
+* **What can you do with a range?**
+```ruby
+  # You can store names and birthdays:
+  president_birthdays = { 
+    'Abraham Lincoln' => 'February 12, 1809', 
+    'William Henry Harrison' => 'February 9, 1773', 
+    'George Washington' => 'February 22, 1732', 
+    'Ronald Reagan' => 'February 6, 1911' 
+  }
+
+  # You can select objects from hashes:
+  puts presidents_birthdays['George Washington' #=> 'February 22, 1732'
