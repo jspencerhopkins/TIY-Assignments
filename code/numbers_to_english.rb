@@ -89,37 +89,3 @@ def number_to_english(number)
 	end
 
 puts number_to_english( 44)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
