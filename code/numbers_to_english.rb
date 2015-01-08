@@ -50,12 +50,18 @@ class Fixnum
 			'nineteen'
 		]
 
-		
+		# using 44 as an example
+
+		# handling hundreds
 
 		left = self
+		# now left = 44
+
 		write = left/100
+		# write = 0.44
 
 		left = left - write*100
+		# left = 0.44 - (44) = -43.56
 
 		if write > 0
 			hundreds = write.number_to_english
@@ -66,7 +72,8 @@ class Fixnum
 			end
 		end
 
-
+		# handling tens
+		
 
 		write = left/10
 		left = left - write*10
@@ -84,6 +91,8 @@ class Fixnum
 			end
 		end
 
+		# handling ones
+
 		write = left
 		left = 0
 
@@ -92,7 +101,11 @@ class Fixnum
 		end
 
 		numWord
+
 	end	
 end
 
+
+
 puts 44.number_to_english
+
