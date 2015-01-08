@@ -10,7 +10,9 @@ class Fixnum
 											)
 		
 		if self > 20
-			"twenty one"
+			tens = self / 10
+			ones = self % 10
+			"twenty #{ones.to_english}"
 		else
 			names_as_array[self]
 		end
@@ -22,3 +24,4 @@ puts 1.to_english #=> "one"
 puts 2.to_english #=> "two"
 puts 9.to_english #=> "three"
 puts 21.to_english #=> "three"
+puts 22.to_english #=> "three"
