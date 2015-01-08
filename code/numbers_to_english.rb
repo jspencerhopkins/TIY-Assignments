@@ -56,7 +56,8 @@ class Fixnum
 
 		if write > 0
 			hundreds = number_to_english(write)
-			number = 
+			numWord = numWord
+			 
 
 
 
