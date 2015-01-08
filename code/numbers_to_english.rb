@@ -1,11 +1,14 @@
 
+class Fixnum
 
-def number_to_english(number)
+	def number_to_english
 
-		if number < 0
+		# only going to handle positives numbers... for now
+
+		if self < 0
 			return 'Please enter a number that isn\'t negative.'
 		end
-		if number == 0
+		if self == 0
 			return 'zero'
 		end
 
@@ -47,19 +50,23 @@ def number_to_english(number)
 			'nineteen'
 		]
 
-		left = number
+		
+
+		left = self
 		write = left/100
 
 		left = left - write*100
 
 		if write > 0
-			hundreds = number_to_english(write)
+			hundreds = write.number_to_english
 			numWord = numWord + hundreds - ' hundred'
 
 			if left > 0
 				numWord = numWord + ' '
 			end
 		end
+
+
 
 		write = left/10
 		left = left - write*10
@@ -85,7 +92,7 @@ def number_to_english(number)
 		end
 
 		numWord
+	end	
+end
 
-	end
-
-puts number_to_english( 44)
+puts 44.number_to_english
