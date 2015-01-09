@@ -26,5 +26,6 @@ At the the start of a blackjack game, the players and the dealer receive two car
 * If dealer also has blackjack, game ends in a push (a tie)
 * If dealer has blackjack, player loses
 
-
-
+### Player turns
+After deal, the game moves forward with the player taking action.
+The player can keep his hand as it is (stand) or take more cards from the deck (hit), one at a time, until either the player judges that the hand is strong enough to go up against the dealer's hand and stands, or until it goes over 21, in which case the player immediately loses(busts).
