@@ -15,3 +15,7 @@
 
 ### Players
 Dealer vs Player
+
+### Ojective
+* The aim of the game is to accumulate a higher point total than the dealer, but without going over 21.  
+* You compute your score by adding values of your individual cards.
