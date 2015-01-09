@@ -1,5 +1,9 @@
 # How to to play Blackjack
 
+### Ojective
+* The aim of the game is to accumulate a higher point total than the dealer, but without going over 21.  
+* You compute your score by adding values of your individual cards.
+
 ### Deck
 52 cards
 * (4) Twos
@@ -16,6 +20,6 @@
 ### Players
 Dealer vs Player
 
-### Ojective
-* The aim of the game is to accumulate a higher point total than the dealer, but without going over 21.  
-* You compute your score by adding values of your individual cards.
+### Deal
+At the the start of a blackjack game, the players and the dealer receive two cards each.
+
