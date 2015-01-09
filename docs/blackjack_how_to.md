@@ -22,4 +22,9 @@ Dealer vs Player
 
 ### Deal
 At the the start of a blackjack game, the players and the dealer receive two cards each.
+* If players cards total 21 points (blackjack), then player wins. Unless....
+* If dealer also has blackjack, game ends in a push (a tie)
+* If dealer has blackjack, player loses
+
+
 
