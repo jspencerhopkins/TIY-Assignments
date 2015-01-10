@@ -22,7 +22,9 @@ class TestGame < MiniTest::Unit::TestCase
   end
 
   def test_game_deck_sums_to_380
-  	assert_equal 381, @bjack.deck.inject(:+)
+  	assert_equal 380, @bjack.deck.inject(:+)
   end
+
+
 
 end
