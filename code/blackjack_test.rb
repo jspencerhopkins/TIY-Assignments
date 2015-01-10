@@ -6,7 +6,6 @@ class TestGame < MiniTest::Unit::TestCase
 
 	def setup #this runs before each test
     @bjack = Game.new
-    @deck = Deck.new
   end
 
 	def test_game_exists
@@ -17,5 +16,8 @@ class TestGame < MiniTest::Unit::TestCase
   	assert @bjack.deck
   end
 
+  def test_game_deck_is_an_array
+  	assert@bjack.deck.is_a? Array
+  end
 
 end

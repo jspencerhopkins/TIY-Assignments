@@ -8,34 +8,34 @@ class Game
   #and we can pretend it's a method: Game.new.grid
 
   def initialize #this runs when Game.new is called
-#     @grid = [['', '', ''], 
-#              ['', '', ''], 
-#              ['', '', '']]
-#     @current_player = 'X'
+    @grid = [['', '', ''], 
+             ['', '', ''], 
+             ['', '', '']]
+    @current_player = 'X'
   end
 
-#   def empty_spaces
-#     @grid.flatten.select{|space| space == ""}
-#   end 
+  def empty_spaces
+    @grid.flatten.select{|space| space == ""}
+  end 
 
-#   def move!
-#     @grid[1][1] = 'X'
-#     if @current_player == 'X'
-#       @current_player = 'O'
-#     else
-#       @current_player = 'X'
-#     end
-#   end 
+  def move!
+    @grid[1][1] = 'X'
+    if @current_player == 'X'
+      @current_player = 'O'
+    else
+      @current_player = 'X'
+    end
+  end 
 
-#   def display
-#     " | | \n" +
-#     "-+-+-\n" +
-#     " | | \n" +
-#     "-+-+-\n" +
-#     " | | \n"
-#   end
+  def display
+    " | | \n" +
+    "-+-+-\n" +
+    " | | \n" +
+    "-+-+-\n" +
+    " | | \n"
+  end
 
-#   def current_player
-#     @current_player
-#   end
+  def current_player
+    @current_player
+  end
 end
