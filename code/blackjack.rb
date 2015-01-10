@@ -19,6 +19,6 @@ class Game
 						]
   end
 
-
+  
 
 end
