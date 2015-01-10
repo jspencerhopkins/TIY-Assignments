@@ -18,6 +18,9 @@ class TestGame < MiniTest::Unit::TestCase
 
   def test_game_deck_is_an_array
   	assert@bjack.deck.is_a? Array
+  	assert_equal 52, @bjack.deck.length
   end
+
+
 
 end
