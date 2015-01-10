@@ -5,14 +5,15 @@ require './blackjack'
 class TestGame < MiniTest::Unit::TestCase
 
 	def setup #this runs before each test
-    @bjack = Blackjack.new
+    @bjack = Game.new
+    @deck = Deck.new
   end
 
 	def test_game_exists
     assert @bjack
   end
 
-  def test_game_desk_exists
+  def test_game_deck_exists
   	assert @bjack.deck
   end
 
