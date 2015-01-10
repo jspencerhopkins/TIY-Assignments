@@ -12,7 +12,7 @@ class Game
              ['', '', ''], 
              ['', '', '']]
     @current_player = 'X'
-  end  
+  end
 
   def empty_spaces
     @grid.flatten.select{|space| space == ""}

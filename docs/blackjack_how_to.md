@@ -36,4 +36,3 @@ If the dealer doesn't have a natural (11 + 10) blackjack, he hits (takes mroe ca
 Contrary to the player, though, the dealer's action is completely dictated by the rules.
 The dealer must hit if the value of the hand is lower than 17, otherwise the dealer will stand.
 If dealer goes bust, player wins.
-
