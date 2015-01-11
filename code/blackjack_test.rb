@@ -25,12 +25,11 @@ class TestGame < MiniTest::Unit::TestCase
   	assert_equal 380, @bjack.deck.inject(:+)
   end
 
-  def test_game_player_hand_exists
+  def test_game_player_and_dealer_hands_exists
     assert @bjack.player_hand.is_a? Array
-  end
-
-  def test_game_dealer_hand_exists
     assert @bjack.dealer_hand.is_a? Array
   end
+
+
 
 end
