@@ -25,4 +25,8 @@ class TestGame < MiniTest::Unit::TestCase
   	assert_equal 380, @bjack.deck.inject(:+)
   end
 
+  def test_player_hand_exists
+    assert @bjack.player_hand
+  end
+
 end
