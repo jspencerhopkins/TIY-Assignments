@@ -20,11 +20,9 @@ class TestGame < MiniTest::Unit::TestCase
   	assert @bjack.deck.is_a? Array
   	assert_equal 52, @bjack.deck.length
   end
-
+  
   def test_game_deck_sums_to_380
   	assert_equal 380, @bjack.deck.inject(:+)
   end
-
-
 
 end

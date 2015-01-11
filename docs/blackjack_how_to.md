@@ -17,11 +17,13 @@
 * (16) "10s" (tens, jacks, queens, kings)
 * (4) "11s" (aces)
 
+
+
 ### Players
 Dealer vs Player
 
 ### Deal
-At the the start of a blackjack game, the players and the dealer receive two cards each.  Player only knows one of the dealer's cards - the other is face-down (hidden)
+SHUFFLE CARDS.  At the the start of a blackjack game, the players and the dealer receive two cards each.  Player only knows one of the dealer's cards - the other is face-down (hidden)
 * If players cards total 21 points (blackjack), then player wins. Unless....
 * If dealer also has blackjack, game ends in a push (a tie)
 
