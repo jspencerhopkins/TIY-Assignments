@@ -1,6 +1,6 @@
 class Game
 
-	attr_accessor :deck, :player_hand
+	attr_accessor :deck, :player_hand, :dealer_hand
 
 	def initialize
 		@deck = [	2, 2, 2, 2,
@@ -18,6 +18,7 @@ class Game
 							11, 11, 11, 11
 						]
 		@player_hand =[]
+		@dealer_hand = []
   end
 
 # need to setup dealer & player
