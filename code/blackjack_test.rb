@@ -26,7 +26,7 @@ class TestGame < MiniTest::Unit::TestCase
   end
 
   def test_player_hand_exists
-    assert @bjack.player_hand
+    assert @bjack.player_hand.is_a? Array
   end
 
 end
