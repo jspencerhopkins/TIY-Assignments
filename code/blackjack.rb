@@ -17,7 +17,6 @@ class Game
 							10, 10, 10, 10,
 							11, 11, 11, 11
 						]
-
   end
 
 	# need to setup dealer & player
@@ -29,15 +28,28 @@ end
 
 
 
-test = Game.new
+new_game = Game.new
 
-shuffled_deck = test.deck.shuffle
+shuffled_deck = new_game.deck.shuffle
 
-my_cards = []
+player_hand = []
 
 2.times do
-	my_cards << shuffled_deck.pop
+	player_hand << shuffled_deck.pop
 end	
-	
 
-puts my_cards
+puts "The player's hand is #{player_hand[0]} and #{player_hand[1]}"
+
+
+dealer_hand = []
+
+2.times do
+	dealer_hand << shuffled_deck.pop
+end
+	
+puts "The dealers's hand is #{dealer_hand[0]} and #{dealer_hand[1]}"
+
+puts shuffled_deck.inject(:+)
+
+
+
