@@ -29,9 +29,13 @@ class TestCard < MiniTest::Unit::TestCase
   	assert_equal 11, ace_of_hearts.value
   end
 
-  def test_display_of_cards
+  def test_display_of_cards_number
   	assert_equal "4 of Spades", @card.display
   end
 
+  def test_display_of_cards_with_faces
+  	queen_of_diamonds = Card.new(:queen, :diamonds)
+  	assert_equal "Queen of Diamonds", queen_of_diamonds.display
+  end
 
 end
