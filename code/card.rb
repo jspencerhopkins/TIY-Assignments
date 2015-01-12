@@ -17,4 +17,7 @@ class Card
 		end
 	end
 
+	# def display
+		
+
 end

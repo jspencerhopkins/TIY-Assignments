@@ -11,11 +11,13 @@ class TestCard < MiniTest::Unit::TestCase
   	assert @card
   end
 
-  def test_card_has_suit_and_value
+  def test_card_has_suit
   	assert_equal :spades, @card.suit
-  	assert_equal 4, @card.value
   end
 
+  def test_card_value_less_than_10
+  	assert_equal 4, @card.value
+  end 
 
 
 
