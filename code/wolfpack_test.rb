@@ -1,10 +1,11 @@
 require 'minitest/autorun'
 require './wolfpack'
-
-# A wolfpack is a group of wolves
-# A wolf has a name and an age
+require './wolf'
 
 class TestWolfpack < MiniTest::Unit::TestCase
 
+	def setup
+		@wolfpack = Wolfpack.new
+	end
 
 end

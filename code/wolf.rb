@@ -13,5 +13,5 @@ class Wolf
 		end
 	end
 
-
+	
 end

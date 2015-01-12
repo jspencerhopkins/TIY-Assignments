@@ -3,6 +3,8 @@ require './wolf'
 
 # A wolfpack is a group of wolves
 # A wolf has a name and an age
+# The leader of the wolfpack is the oldest wolf.
+
 
 class TestWolf < MiniTest::Unit::TestCase
 
