@@ -21,6 +21,12 @@ class TestCard < MiniTest::Unit::TestCase
 
   def test_card_face_card_value
   	face_card = Card.new(:king, :diamonds)
+  	assert_equal 10, face_card.value
+  end
+
+  def test_ace_equals_eleven
+  	ace_of_hearts = Card.new(:ace, :hearts)
+  	assert_equal 11, ace.value
   end
 
 
