@@ -17,7 +17,8 @@ class Card
 		end
 	end
 
-	# def display
-		
+	def display
+		"#{@value.to_s.capitalize} of #{suit.to_s.capitalize}"
+	end
 
 end
