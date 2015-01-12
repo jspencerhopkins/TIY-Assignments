@@ -8,4 +8,10 @@ class TestWolfpack < MiniTest::Unit::TestCase
 		@wolfpack = Wolfpack.new
 	end
 
+	def test_wolfpack_has_2_or_more_wolves
+		assert true, @wolfpack.length
+	end
+
+	
+
 end
