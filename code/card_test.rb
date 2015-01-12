@@ -1,16 +1,19 @@
 require 'minitest/autorun'
-#require 'minitest/pride'
 require './card'
 
 class TestCard < MiniTest::Unit::TestCase
 
 	def setup #this runs before each test
-    @card = Card.new
+    @card = Card.new(4, :spades)
   end
 
-  # card has suit and value
   def test_card_exisits
-  	assert Card.new
+  	assert @card
   end
+
+  def test_card_has_suit
+  	assert_equal :spades, @card.suit
+  end
+
 
 end
