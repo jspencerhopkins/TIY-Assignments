@@ -5,6 +5,13 @@ class Wolf
 		@age = age
 	end
 
+	def howl
+		if @age <= 3
+			"howl"
+		else
+			"HOWL"
+		end
+	end
 
 
 end
