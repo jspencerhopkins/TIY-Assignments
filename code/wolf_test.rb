@@ -27,9 +27,14 @@ class TestWolf < MiniTest::Unit::TestCase
   	assert_equal "howl", @wolf.howl
   end
 
-  def test_is_older_wolve_dominant_to_younger
+  def test_older_wolve_is_dominant_to_younger
   	old_wolf = Wolf.new(:mike, 8)
   	assert old_wolf.dominant_over?(@wolf)
+  end
+
+  def test_younger_wolve_is_submissive_to_older_wolf
+    young_wolf = Wolf.new(:zed, 1)
+    assert young_wolf.submissive_to?(@wolf)
   end
 
 end

@@ -19,4 +19,8 @@ class Wolf
 		@age > other_wolf.age
 	end
 
+	def submissive_to?(other_wolf)
+		@age < other_wolf.age
+	end
+
 end
