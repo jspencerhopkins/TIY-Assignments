@@ -15,4 +15,8 @@ class Wolf
 		end
 	end
 
+	def dominant_over?(other_wolf)
+		@age > other_wolf.age
+	end
+
 end
