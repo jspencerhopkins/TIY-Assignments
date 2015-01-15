@@ -15,13 +15,23 @@
 #
 def triangle(a, b, c)
 
-	if a == b && b == c 
-    :equilateral
-  elsif a == b || a == c || b == c
-    :isosceles
-  else
-    :scalene
-  end
+	# Phoned a friend (i.e. the internet for this one).
+	# Was able to grasp the if/else statement to determine which triangle is which.
+	# But very stumped by the TriangleError stuff
+
+	raise TriangleError if [a, b, c].min <= 0
+  first_min, second_min, greater_then_all = [a, b, c].sort
+  raise TriangleError if first_min + second_min <= greater_then_all
+  
+  [:equilateral, :isosceles, :scalene].fetch [a, b, c].uniq.size - 1
+
+	# if a == b && b == c 
+ #    :equilateral
+ #  elsif a == b || a == c || b == c
+ #    :isosceles
+ #  else
+ #    :scalene
+ #  end
 
 end
 
