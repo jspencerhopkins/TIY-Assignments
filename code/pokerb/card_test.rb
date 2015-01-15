@@ -13,4 +13,8 @@ class CardTest < MiniTest::Unit::TestCase
 		assert_equal 4, @card.value
 	end
 
+	def test_card_has_suit
+		assert_equal :diamonds, @card.suit
+	end
+
 end
