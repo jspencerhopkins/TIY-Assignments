@@ -31,5 +31,9 @@ class CardTest < MiniTest::Unit::TestCase
 		assert_equal "4 of Diamonds", @card.display
 	end
 
+	def test_face_card_displays_its_suit_and_value
+		assert_equal "King of Spades", @face_card.display
+	end
+
 
 end

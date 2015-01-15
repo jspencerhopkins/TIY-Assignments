@@ -18,7 +18,7 @@ class Card
 	end
 	
 	def display
-		"#{value.to_s.capitalize} of #{suit.to_s.capitalize}"
+		"#{@value.to_s.capitalize} of #{suit.to_s.capitalize}"
 	end	
 
 end
