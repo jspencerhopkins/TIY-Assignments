@@ -16,6 +16,9 @@ class Card
 			10
 		end
 	end
-			
+	
+	def display
+		"#{value.to_s.capitalize} of #{suit.to_s.capitalize}"
+	end	
 
 end
