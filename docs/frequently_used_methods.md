@@ -2,7 +2,9 @@
 
 ## Array
 
-* + # [1, 2] + [ 6, 7 ] => [1, 2, 6, 7]
+/-/-/ WENT OVER THESE IN 01.14.15 LECTURE /-/-/
+
+* [1, 2] + [ 6, 7 ] => [1, 2, 6, 7]
 * <<
 * ==
 * []
@@ -33,11 +35,9 @@
 
 ## Enumerable
 
-* all?
-* any?
-* detect
-* each_with_index
-* grep
+* all?  						# => %w{ant bear cat}.all? {|word| word.length >= 3}   #=> true
+* any?  						# => %w{ant bear cat}.any? {|word| word.length >= 3}   #=> true
+* each_with_index 	# => ['cat', 'dog', 'pig', 'goat'].each_with_index {|animal, idx| puts animal if idx % 2 == 0}								
 * group_by
 * inject
 * max
