@@ -22,4 +22,10 @@ class CardTest < MiniTest::Unit::TestCase
 		assert_equal 10, face_card.value
 	end
 
+	def test_ace_valued_at_11
+		ace = Card.new(:ace, :hearts)
+		assert_equal 11, ace.value
+	end
+
+
 end
