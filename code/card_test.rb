@@ -1,14 +1,18 @@
 require 'minitest/autorun'
 require './card'
 
-class TestCard < MiniTest::Unit::TestCase
+class CardTest < MiniTest::Unit::TestCase
 
 	def setup #this runs before each test
     @card = Card.new(4, :spades)
   end
 
-  def test_card_exisits
-  	assert @card
+  # def test_card_exisits
+  # 	assert @card
+  # end
+
+  def test_card_can_be_displayed_as_string
+    assert_equal "seven of spades", card.to_s
   end
 
   def test_card_has_suit

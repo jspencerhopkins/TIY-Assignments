@@ -22,3 +22,4 @@ class Card
 	end
 
 end
+
