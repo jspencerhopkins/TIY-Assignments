@@ -14,4 +14,5 @@ class DeckTest < MiniTest::Unit::TestCase
 		assert_equal 52, @deck.size
 	end
 
+
 end
