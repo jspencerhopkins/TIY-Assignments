@@ -1,6 +1,7 @@
 require './card'
-
 class Hand
+
+	include Comparable
 
 	attr_accessor :cards
 
@@ -10,7 +11,6 @@ class Hand
 
 	def high_card
 		@cards.max_by{|card| card.value}
-
 	end
 
 	def has_pair?
@@ -43,5 +43,17 @@ class Hand
 	def has_straight_flush?
 		self.has_flush? && self.has_straight?
 	end
+
+	def <=>(other_hand)
+		hand_rank<=> other_hand.hand_rank
+	end
+
+	def hand_rank
+		if has_straight_flush?
+			1_000_000 * high_card.value
+		else has_3_of_a_kind?
+			100_000 * high_card.value
+		end
+	end	
 
 end

@@ -47,4 +47,12 @@ class HandTest < MiniTest::Unit::TestCase
 		assert hand_with_straight_flush.has_straight_flush?
 	end
 
+	def test_straight_flush_hand_w_Q_J_10_of_H_beats_8_7_6_of_D
+		sf_hand1 = Hand.new([Card.new(:queen, :hearts), Card.new(:jack, :hearts), Card.new(10, :hearts)])
+		sf_hand2 = Hand.new([Card.new(8, :diamonds), Card.new(7, :diamonds), Card.new(6, :diamonds)])
+		assert sf_hand1 > sf_hand2
+	end
+
+
+
 end
