@@ -40,4 +40,8 @@ class Hand
 		all_card_values.uniq.length == 1		
 	end
 
+	def has_straight_flush?
+		self.has_flush? && self.has_straight?
+	end
+
 end
