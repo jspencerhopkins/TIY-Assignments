@@ -18,7 +18,7 @@ class Card
 			13
 		elsif @value == :queen
 			12
-		else 
+		else @value == :jack
 			11
 		end
 	end
