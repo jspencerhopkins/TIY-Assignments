@@ -27,6 +27,9 @@ class HandTest < MiniTest::Unit::TestCase
 		assert hand_with_pair.has_pair?
 	end
 
-
+	def test_hand_has_3_cards_of_the_same_suit
+		hand_with_flush = Hand.new([Card.new(10, :spades), Card.new(9, :spades), Card.new(5, :spades)])
+		assert hand_with_flush.has_flush?
+	end
 
 end

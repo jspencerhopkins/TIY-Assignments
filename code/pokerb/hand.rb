@@ -26,4 +26,14 @@ class Hand
 		all_card_values.length == unique_values.length
 	end
 
+	def has_flush?
+		counts = {}
+		@cards.each do |card|
+			counts[card.suit] = counts[card.suit].to_i + 1
+		end
+		counts.any?{|suit, number| number == 3 }
+	end
+
+
+
 end
