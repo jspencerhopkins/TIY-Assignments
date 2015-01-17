@@ -50,9 +50,17 @@ class Hand
 
 	def hand_rank
 		if has_straight_flush?
+			1_000_000_000_000_000 * high_card.value
+		elsif has_3_of_a_kind?
+			1_000_000_000_000 * high_card.value
+		elsif has_straight?
+			1_000_000_000 * high_card.value
+		elsif has_flush?
 			1_000_000 * high_card.value
-		else has_3_of_a_kind?
-			100_000 * high_card.value
+		elsif has_pair?
+			1_000 * high_card.value	
+		else
+			1 * high_card.value
 		end
 	end	
 
