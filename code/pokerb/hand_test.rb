@@ -33,9 +33,13 @@ class HandTest < MiniTest::Unit::TestCase
 	end
 
 	def test_hand_has_3_consecutive_cards_of_mixed_suits
-		hand_with_straight = Hand.new([Card.new(10, :diamonds), Card.new(9, :spades), Card.new(8, :hearts)])
+		hand_with_straight = Hand.new([Card.new(:jack, :diamonds), Card.new(:queen, :spades), Card.new(10, :hearts)])
 		assert hand_with_straight.has_straight?
 	end
 
+	# def test_hand_has_three_of_a_kind
+	# 	hand_with_three_of_a_kind = Hand.new([Card.new(:jack, :diamonds), Card.new(:queen, :spades), Card.new(10, :hearts)])
+	# 	assert hand_with_three_of_a_kind.has_3_of_a_kind?
+	# end
 
 end
