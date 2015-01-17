@@ -34,6 +34,11 @@ class Hand
 		counts.any?{|suit, number| number == 3 }
 	end
 
+	def has_straight?
+		all_card_values = @cards.collect{|card| card.value}
+		sorted_values = all_card_values.sort.reverse
+		sorted_values[0] - sorted_values[2] == 2
+	end
 
 
 end

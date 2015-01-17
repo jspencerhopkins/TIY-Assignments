@@ -32,4 +32,10 @@ class HandTest < MiniTest::Unit::TestCase
 		assert hand_with_flush.has_flush?
 	end
 
+	def test_hand_has_3_consecutive_cards_of_mixed_suits
+		hand_with_straight = Hand.new([Card.new(10, :diamonds), Card.new(9, :spades), Card.new(8, :hearts)])
+		assert hand_with_straight.has_straight?
+	end
+
+
 end
