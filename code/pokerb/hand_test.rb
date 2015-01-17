@@ -59,7 +59,9 @@ class HandTest < MiniTest::Unit::TestCase
 		assert sf_hand > threeKind_hand
 	end
 
-	def test_straight_flush_hand_beats_3_of_a_kind_hand
-
-
+	def test_3_of_a_kind_hand_beats_straight
+		threeKind_hand = Hand.new([Card.new(:jack, :diamonds), Card.new(:jack, :spades), Card.new(:jack, :hearts)])
+		straight_hand = Hand.new([Card.new(:jack, :diamonds), Card.new(:queen, :spades), Card.new(10, :hearts)])
+		assert threeKind_hand > straight_hand
+	end
 end
