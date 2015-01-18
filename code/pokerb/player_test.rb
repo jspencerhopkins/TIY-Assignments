@@ -14,6 +14,10 @@ class PlayerTest < MiniTest::Unit::TestCase
 		assert @player.hand
 	end
 
+	def test_player_displays_hand
+		assert_equal "Player has 4 of Diamonds, Jack of Hearts, 7 of Diamonds", @player.display
+	end
+
 	def test_player_hand_can_have_unique_cards
 		assert @player.has_no_matching_cards?
 	end
@@ -69,4 +73,5 @@ class PlayerTest < MiniTest::Unit::TestCase
 		hand_with_three_of_a_kind = Player.new([Card.new(:jack, :diamonds), Card.new(:jack, :spades), Card.new(:jack, :hearts)])
 		assert_equal 11_000_000_000_000, hand_with_three_of_a_kind.hand_rank
 	end
+
 end

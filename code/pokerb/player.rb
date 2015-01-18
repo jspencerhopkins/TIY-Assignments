@@ -9,6 +9,14 @@ class Player
 		@hand = cards
 	end
 
+	def display
+		"Player has #{card_display}"
+	end
+
+	def card_display
+		@hand.map{ |card| card.display }.join (', ')
+	end
+
 	def high_card
 		@hand.max_by{|card| card.value}
 	end
