@@ -1,3 +1,6 @@
+# NEXT STEP....BETTING
+
+
 require './deck'
 require './player'
 
