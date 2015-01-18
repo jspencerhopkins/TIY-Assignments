@@ -15,7 +15,7 @@ class PlayerTest < MiniTest::Unit::TestCase
 	end
 
 	def test_player_displays_hand
-		assert_equal "Player has 4 of Diamonds, Jack of Hearts, 7 of Diamonds", @player.display
+		assert_equal " has 4 of Diamonds, Jack of Hearts, 7 of Diamonds", @player.display
 	end
 
 	def test_player_hand_can_have_unique_cards

@@ -10,7 +10,7 @@ class Player
 	end
 
 	def display
-		"Player has #{card_display}"
+		"has #{card_display}"
 	end
 
 	def card_display
