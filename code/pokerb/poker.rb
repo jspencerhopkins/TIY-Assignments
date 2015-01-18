@@ -13,11 +13,11 @@ class ThreeCardPoker
 	end
 
 	def display_player_hand
-		"Player #{@player.display}"
+		"You have #{@player.display}"
 	end
 
 	def display_dealer_hand
-		"Dealer #{@dealer.display}"
+		"Dealer has #{@dealer.display}"
 	end
 
 	def check_for_winner
