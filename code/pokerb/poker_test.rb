@@ -27,4 +27,5 @@ class PokerTest < MiniTest::Unit::TestCase
   	assert_equal 3, @game.dealer.hand.size
   end  
 
+
 end
