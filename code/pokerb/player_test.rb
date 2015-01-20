@@ -15,7 +15,7 @@ class PlayerTest < MiniTest::Unit::TestCase
 	end
 
 	def test_player_displays_hand
-		assert_equal " has 4 of Diamonds, Jack of Hearts, 7 of Diamonds", @player.display
+		assert_equal "4 of Diamonds, Jack of Hearts, 7 of Diamonds", @player.display
 	end
 
 	def test_player_hand_can_have_unique_cards
@@ -39,6 +39,11 @@ class PlayerTest < MiniTest::Unit::TestCase
 	def test_player_hand_has_3_consecutive_cards_of_mixed_suits
 		hand_with_straight = Player.new([Card.new(:jack, :diamonds), Card.new(:queen, :spades), Card.new(10, :hearts)])
 		assert hand_with_straight.has_straight?
+	end
+
+	def test_straight_has_no_pair
+		hand_with_pair = Player.new([Card.new(:queen, :diamonds), Card.new(:queen, :spades), Card.new(10, :hearts)])
+		refute hand_with_pair.has_straight?
 	end
 
 	def test_player_hand_has_three_of_a_kind

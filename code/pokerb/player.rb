@@ -21,13 +21,15 @@ class Player
 		@hand.max_by{|card| card.value}
 	end
 
+	def all_card_values
+		@hand.collect{|card| card.value}
+	end
+
 	def has_pair?
-		all_card_values = @hand.collect{|card| card.value}
 		all_card_values.uniq.length == 2		
 	end
 
 	def has_no_matching_cards?
-		all_card_values = @hand.collect{|card| card.value}
 		unique_values = all_card_values.uniq
 		all_card_values.length == unique_values.length
 	end
@@ -38,13 +40,11 @@ class Player
 	end
 
 	def has_straight?
-		all_card_values = @hand.collect{|card| card.value}
 		sorted_values = all_card_values.sort
-		sorted_values[2] - sorted_values[0] == 2
+		sorted_values[2] - sorted_values[0] == 2 && has_no_matching_cards?
 	end
 
 	def has_3_of_a_kind?
-		all_card_values = @hand.collect{|card| card.value}
 		all_card_values.uniq.length == 1		
 	end
 

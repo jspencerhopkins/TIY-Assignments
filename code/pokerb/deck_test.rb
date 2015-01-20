@@ -17,5 +17,11 @@ class DeckTest < MiniTest::Unit::TestCase
 		assert_equal 49, @deck.size
 	end
 
+	#test shuffle
+
+	#test if cards are in deck
+
+	#
+
 end
 
