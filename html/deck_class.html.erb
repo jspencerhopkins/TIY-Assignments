@@ -1,0 +1,11 @@
+<h1>Cards</h1>
+
+<h2>Printed image of every card in a 52 card deck</h2>
+
+<% require_relative './card' %>
+
+<% new_card = Card.new(6, "S") %>
+
+<img src="/Users/jsh/tiy/tiy-assignments/html/img/<%= new_card.value %><%= new_card.suit %>.svg" height="300" width="300">
+
+
