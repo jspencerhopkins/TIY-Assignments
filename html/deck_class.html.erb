@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Deck of Cards</title>
+</head>
+
+<body>
+
+<h1>Deck of Cards</h1>
+
+<h2>Printed image of every card in a 52 card deck</h2>
+<h3>This is using the Deck class from Poker</h3>
+
+<% require './deck' %>
+
+<% all_cards = Deck.new.deal(52) %>
+<% all_card_values = all_cards.collect {|card| card.value}.uniq %>
+<% all_card_suits = all_cards.collect {|card| card.suit}.uniq %>
+
+	<% all_card_suits.each do |s| %>
+		<% all_card_values.each do |v| %>
+			<img src="/Users/jsh/tiy/tiy-assignments/html/img/<%= v %><%= s %>.svg" height="300" width="300">
+		<% end %>
+	<% end %>
+
+</body>
+</html>
