@@ -1,9 +1,22 @@
-<h1>Cards</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Deck of Cards</title>
+</head>
+
+<body>
+
+<h1>Deck of Cards</h1>
 
 <h2>Printed image of every card in a 52 card deck</h2>
+
 
 	<% ["D","C","H","S"].each do |s| %>
 		<% [2,3,4,5,6,7,8,9,10,"J","Q","K","A"].each do |v| %>
 			<img src="/Users/jsh/tiy/tiy-assignments/html/img/<%= v %><%= s %>.svg" height="300" width="300">
 		<% end %>
 	<% end %>
+
+</body>
+</html>
