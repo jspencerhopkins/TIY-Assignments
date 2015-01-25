@@ -8,6 +8,21 @@ title: My Iron Yard Odyssey
 
 	<%= partial "/layouts/partials/header" %>
 
+	<div id="content-container">
+		<div id="section-navigation">
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<ul>
+				<li><a href="#dt">Data Types</a></li>
+				<li><a href="#">Functions/Methods</a></li>
+				<li><a href="#">Control Structures</a></li>
+				<li><a href="#">Objects/Classes</a></li>
+			</ul>
+		</div>
+
 	<div id="content">
 		<h2>
 			Ruby
@@ -17,7 +32,7 @@ title: My Iron Yard Odyssey
 
 		<p>
 			<h3>
-				Basic Data Types
+				<a name="dt">Basic Data Types</a>
 			</h3>
 
 			<ul>
@@ -27,10 +42,10 @@ title: My Iron Yard Odyssey
 						<li>With decimals are called <i>floats</i>.</li>
 						<li>Simple Arithmetic</li>
 							<ul >
-								<li>Addition (+)</li>
-								<li>Subtraction (-)</li>
-								<li>Mulitplication (*)</li>
-								<li>Division (/)</li>
+								<li>Addition ( + )</li>
+								<li>Subtraction ( - )</li>
+								<li>Mulitplication ( * )</li>
+								<li>Division ( / )</li>
 								<br>
 								<li>Some examples</li>
 								<li style="list-style-type: none;">
@@ -38,7 +53,7 @@ title: My Iron Yard Odyssey
 							</ul>		
 					</ul>
 					
-					<br>
+				<br>
 
 				<li><b>Strings</b></li>
 					<ul>
@@ -50,6 +65,31 @@ title: My Iron Yard Odyssey
 									<%= tag :img, :src => "img/ex_strings.png" %>
 								</li>
 							</ul>
+					</ul>
+				<br>
+
+				<li><b>Arrays</b></li>
+					<ul>
+						<li>Ordered, integer-indexed collections of any object</li>
+						<li>Indexing starts at 0</li>
+						<li>Negative index is assumed to be relative to the end of the array; [-1] indicates the last element of the array</li>
+						<li>Can be created by using the literal constructor [ ]</li>
+						<li>Can contain different types of objects: integers, strings, floats, etc</li>
+						<br>
+						<li>Example:</li>
+						<li style="list-style-type: none;">
+							<%= tag :img, :src => "img/ex_arrays.png" %>
+						</li>
+					</ul>
+
+				<br>
+
+				<li><b>Hashes</b></li>
+					<ul>
+						<li></li>
+					</ul>
+
+
 
 
 
@@ -77,5 +117,6 @@ title: My Iron Yard Odyssey
 	</div>
 	<div id="footer">
 		
+	</div>	
 	</div>
 </div>
