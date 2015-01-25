@@ -140,7 +140,14 @@ textarea {
 
 #navigation li a:hover { background: #9B111E; }
 
-#content-container
+#content-container1
+{
+    float: left;
+    width: 100%;
+    background: #fff url(/img/background1.gif) repeat-y 20% 0;
+}
+
+#content-container2
 {
     float: left;
     width: 100%;
@@ -177,9 +184,14 @@ textarea {
 #content
 {
     float: left;
-    width: 56%;
+    width: 70%;
     padding: 20px 0;
     margin: 0 0 0 2%;
+}
+
+.no-li 
+{
+    list-style-type: none;
 }
 
 #content h2 { margin: 0; }

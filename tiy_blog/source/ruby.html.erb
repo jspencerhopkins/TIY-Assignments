@@ -1,5 +1,5 @@
 ---
-title: My Iron Yard Odyssey
+title: My Iron Yard Odyssey - Home
 ---
 
 <!-- Add your site or application content here -->
@@ -8,115 +8,112 @@ title: My Iron Yard Odyssey
 
 	<%= partial "/layouts/partials/header" %>
 
-	<div id="content-container">
-		<div id="section-navigation">
-			<br>
-			<br>
-			<br>
-			<br>
-
-			<ul>
-				<li><a href="#dt">Data Types</a></li>
-				<li><a href="#">Functions/Methods</a></li>
-				<li><a href="#">Control Structures</a></li>
-				<li><a href="#">Objects/Classes</a></li>
-			</ul>
-		</div>
-
-	<div id="content">
-		<h2>
-			Ruby
-		</h2>
-		
-		<hr>
-
-		<p>
-			<h3>
-				<a name="dt">Basic Data Types</a>
-			</h3>
-
-			<ul>
-				<li><b>Numbers</b></li>
-					<ul>
-						<li>Without decimals are called <i>integers</i>.</li>
-						<li>With decimals are called <i>floats</i>.</li>
-						<li>Simple Arithmetic</li>
-							<ul >
-								<li>Addition ( + )</li>
-								<li>Subtraction ( - )</li>
-								<li>Mulitplication ( * )</li>
-								<li>Division ( / )</li>
-								<br>
-								<li>Some examples</li>
-								<li style="list-style-type: none;">
-									<%= tag :img, :src => "img/ex_numbers.png" %>
-							</ul>		
-					</ul>
-					
+	<div id="content-container1">
+		<div id="content-container2">
+			<div id="section-navigation">
+				
 				<br>
 
-				<li><b>Strings</b></li>
+				<ul>
+					<b>
+					<li><a href="#dt">Data Types</a></li>
+					<li><a href="#">Functions/Methods</a></li>
+					<li><a href="#">Control Structures</a></li>
+					<li><a href="#">Objects/Classes</a></li>
+				</b>
+				</ul>
+			</div>
+
+			<div id="content">
+				<h2>
+					Ruby
+				</h2>
+				
+				<hr>
+
+				<p>
+					<h3>
+						<a name="dt">Basic Data Types</a>
+					</h3>
+
 					<ul>
-						<li>Groups of letters</li>
-						<li>Can have punctuation, digits, symbols, and spaces</li>
-						<li>Can be added and mulitplied</li>
+						<li><b>Numbers</b></li>
 							<ul>
-								<li style="list-style-type: none;">
-									<%= tag :img, :src => "img/ex_strings.png" %>
+								<li>Without decimals are called <i>integers</i>.</li>
+								<li>With decimals are called <i>floats</i>.</li>
+								<li>Simple Arithmetic</li>
+									<ul >
+										<li>Addition ( + )</li>
+										<li>Subtraction ( - )</li>
+										<li>Mulitplication ( * )</li>
+										<li>Division ( / )</li>
+										<br>
+										<li>Some examples</li>
+										<li class="no-li">
+											<%= tag :img, :src => "img/ex_numbers.png" %>
+									</ul>		
+							</ul>
+							
+						<br>
+
+						<li><b>Strings</b></li>
+							<ul>
+								<li>Groups of letters</li>
+								<li>Can have punctuation, digits, symbols, and spaces</li>
+								<li>Can be added and mulitplied</li>
+									<ul>
+										<li class="no-li">
+											<%= tag :img, :src => "img/ex_strings.png" %>
+										</li>
+									</ul>
+							</ul>
+						<br>
+
+						<li><b>Arrays</b></li>
+							<ul>
+								<li>Ordered, integer-indexed collections of any object</li>
+								<li>Indexing starts at 0</li>
+								<li>Negative index is assumed to be relative to the end of the array; [-1] indicates the last element of the array</li>
+								<li>Can be created by using the literal constructor [ ]</li>
+								<li>Can contain different types of objects: integers, strings, floats, etc</li>
+								<br>
+								<li>Example:</li>
+								<li class="no-li">
+									<%= tag :img, :src => "img/ex_arrays.png" %>
 								</li>
 							</ul>
-					</ul>
-				<br>
 
-				<li><b>Arrays</b></li>
-					<ul>
-						<li>Ordered, integer-indexed collections of any object</li>
-						<li>Indexing starts at 0</li>
-						<li>Negative index is assumed to be relative to the end of the array; [-1] indicates the last element of the array</li>
-						<li>Can be created by using the literal constructor [ ]</li>
-						<li>Can contain different types of objects: integers, strings, floats, etc</li>
 						<br>
-						<li>Example:</li>
-						<li style="list-style-type: none;">
-							<%= tag :img, :src => "img/ex_arrays.png" %>
-						</li>
+
+						<li><b>Hashes</b></li>
+							<ul>
+								<li>A dictionary-like collection of unique keys and their values</li>
+								<li>Also called associative arrays</li>
+								<li>Similar to arrays, but where an Array uses integers as its index, a Hash allows you to use any object type</li>
+								<li>Enumerate their values in the order that the corresponding keys were inserted
+								<li>Can be created by using the literal constructor { }</li>
+								<br>
+								<li>Example:</li>
+								<li class="no-li">
+									<%= tag :img, :src => "img/ex_hashes.png" %>
+								</li>
+							</ul>
+
 					</ul>
-
-				<br>
-
-				<li><b>Hashes</b></li>
-					<ul>
-						<li></li>
-					</ul>
-
-
-
-
-
-
-			</ul>
 		
+				<hr>
 
-		<hr>
+	<!-- IRB info
+				<strong>IRB</strong>
+				<ul>
+					<li>IRB stands for “interactive Ruby” and is a tool to interactively execute Ruby commands with immediate response, experimenting in real-time.</li>
+					<li>The irb command from your shell will start the interpreter.</li>
+					<li><%= tag :img, :src => "img/ex_irb.png" %></li>
+				</ul> -->
 
+			</div>
 
-
-<!-- IRB info
-			<strong>IRB</strong>
-			<ul>
-				<li>IRB stands for “interactive Ruby” and is a tool to interactively execute Ruby commands with immediate response, experimenting in real-time.</li>
-				<li>The irb command from your shell will start the interpreter.</li>
-				<li><%= tag :img, :src => "img/ex_irb.png" %></li>
-			</ul> -->
-			
-
-
-
-
-	
-	</div>
-	<div id="footer">
-		
+			<%= partial "/layouts/partials/footer" %>
+		</div>
 	</div>	
-	</div>
 </div>
