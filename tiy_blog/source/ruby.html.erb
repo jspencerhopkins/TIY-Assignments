@@ -5,37 +5,74 @@ title: My Iron Yard Odyssey
 <!-- Add your site or application content here -->
 
 <div id="container">
-	<div id="header">
-		<h1>
-			My Iron Yard Odyssey
-		</h1>
-		<h3>
-			What I've Learned Along the Way
-		</h3>
-	</div>
-	<div id="navigation">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="ruby.html">Ruby</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="#">git/GitHub</a></li>
-			<li><a href="#">HTML/CSS</a></li>
-			<li><a href="#">Other Useful Info</a></li>
-		</ul>
-	</div>
+
+	<%= partial "/layouts/partials/header" %>
+
 	<div id="content">
 		<h2>
-			Page heading
+			Ruby
 		</h2>
+		
+		<hr>
+
 		<p>
-			asfsdf
-		</p>
-		<p>
-			sdfdsf
-		</p>
-		<p>
-			sdgfsdg
-		</p>
+			<h3>
+				Basic Data Types
+			</h3>
+
+			<ul>
+				<li><b>Numbers</b></li>
+					<ul>
+						<li>Without decimals are called <i>integers</i>.</li>
+						<li>With decimals are called <i>floats</i>.</li>
+						<li>Simple Arithmetic</li>
+							<ul >
+								<li>Addition (+)</li>
+								<li>Subtraction (-)</li>
+								<li>Mulitplication (*)</li>
+								<li>Division (/)</li>
+								<br>
+								<li>Some examples</li>
+								<li style="list-style-type: none;">
+									<%= tag :img, :src => "img/ex_numbers.png" %>
+							</ul>		
+					</ul>
+					
+					<br>
+
+				<li><b>Strings</b></li>
+					<ul>
+						<li>Groups of letters</li>
+						<li>Can have punctuation, digits, symbols, and spaces</li>
+						<li>Can be added and mulitplied</li>
+							<ul>
+								<li style="list-style-type: none;">
+									<%= tag :img, :src => "img/ex_strings.png" %>
+								</li>
+							</ul>
+
+
+
+
+			</ul>
+		
+
+		<hr>
+
+
+
+<!-- IRB info
+			<strong>IRB</strong>
+			<ul>
+				<li>IRB stands for “interactive Ruby” and is a tool to interactively execute Ruby commands with immediate response, experimenting in real-time.</li>
+				<li>The irb command from your shell will start the interpreter.</li>
+				<li><%= tag :img, :src => "img/ex_irb.png" %></li>
+			</ul> -->
+			
+
+
+
+
 	
 	</div>
 	<div id="footer">
