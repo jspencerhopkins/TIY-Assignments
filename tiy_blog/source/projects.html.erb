@@ -1,0 +1,88 @@
+---
+title: My Iron Yard Odyssey - Projects
+---
+
+<!-- Add your site or application content here -->
+
+<div id="container">
+
+	<%= partial "/layouts/partials/header" %>
+
+	<div id="content-container1">
+		<div id="content-container2">
+			<div id="section-navigation">
+
+				<br>
+
+				<ul>
+					<b>
+					<li><a href="#to_num">to_number</a></li>
+					<li><a href="#to_roman">to_roman</a></li>
+					</b>
+				</ul>
+			</div>
+
+			<div id="content">
+				<h2>
+					Projects
+				</h2>
+				
+				<hr>
+
+				<p>
+				<h3>
+					<a name="to_num">to_number</a>
+				</h3>
+					<ul>
+						<li>Write a function that takes the English word for a number and turns into an actual number</li>
+						<li>I struggled with it and typed out an entire hash with english word as key and integer as value - from “one” to “one hundred"</li>
+						<li>We then worked as a class to develope the method to turn any english word into a number up through "millions"</li>
+						<li>Below is the code we collectively created:</li>
+						<br>
+						<li style="list-style-type: none;">
+							<%= tag :img, :src => "img/ex_to_number.png" %>
+						</li>
+					</ul>
+					<br>
+
+				<hr>
+
+				<h3>
+					<a name="to_roman">to_roman</a>
+				</h3>
+					<ul>
+						<li>Take any integer from 1 to 2015 and translate it to a roman numeral</li>
+						<li>Brian started us off in the right direction and left it up to us to finish off the task</li>
+						<li>This project created a "light blub" moment for me as I was able to step back from the code and look for a pattern to solve the problem.
+						<li>Here is the final product of what Brian gave us and what I was able to come up with:</li>
+						<br>
+						<li style="list-style-type: none;">
+							<%= tag :img, :src => "img/ex_to_roman.png" %>
+						</li>
+					</ul>
+					<br>
+
+				<hr>
+
+
+				to_factorial: write a method on the Fixnum class which returns the factorial of a number</br>
+				to_english: convert a number to English (opposite of to_number)</br>
+				Blackjack: create working version of blackjack solely using Ruby</br>
+				Ruby Koans: learning ruby language, syntax, structure and some common functions and libraries through testing</br>
+				Wolfpack: presented with problem outlined in English and taking iterative steps in ruby to solve it</br>
+				Investment Club (moguls): similar to wolfpack</br>
+				Three Card Poker:</br>
+					card/deck/hand/poker classes
+					high card, pair, flush, straight, three of a kind, straight flush ==> comparisons
+					ante/play/pair plus bets
+					integrated with html/css -> using .erb and card image files
+				Codewars.com katas</br>
+				Middleman</br>
+					Build a site that describes everything you know about Ruby and web development to this point
+				
+			</div>
+
+			<%= partial "/layouts/partials/footer" %>
+		</div>
+	</div>	
+</div>

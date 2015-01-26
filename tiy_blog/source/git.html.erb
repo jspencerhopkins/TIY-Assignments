@@ -1,0 +1,81 @@
+---
+title: My Iron Yard Odyssey - git/GitHub
+---
+
+<!-- Add your site or application content here -->
+
+<div id="container">
+
+	<%= partial "/layouts/partials/header" %>
+
+	<div id="content-container1">
+		<div id="content-container2">
+			<div id="section-navigation">
+
+				<br>
+
+				<ul>
+					<b>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					</b>
+				</ul>
+			</div>
+
+			<div id="content">
+				<h2>
+					Git
+				</h2>
+			
+				<hr>	
+				
+				<p>
+					<strong>What is Git?</strong>
+				</p>
+
+				<p>
+					Git allows a team of people to work together, all using the same files. And it helps the team cope with the confusion that tends to happen when multiple people are editing the same files. (<%= link_to 'answer from Quora', 'http://www.quora.com/What-is-Git-used-for-What-does-it-do-exactly' %>)
+				</p>
+
+				<p>
+					<strong>How is it used?</strong>
+				</p>
+
+				<p>
+					The basic Git workflow goes something like this:
+					<ol>
+						<li>You modify files in your working directory</li>
+						<li>You stage the files, adding snapshots of them to your staging area</li>
+						<li>You do a commit, which takes the files as they are in the staging area and stores that snaphot permanently to you Git directory.</li>
+					</ol>
+				</p>
+
+				<p>
+					<strong>Repositories</strong>
+				</p>
+
+				<p>
+					You can get a Git project using two main approaches. 
+					<ol>
+						<li>The first takes an existing project or directory and imports it into Git.</li>
+						<p><code>$ git init</code></p>
+						<li>The second clones an existing Git repository from another server.</li>
+					</ol>
+
+					
+				</p>
+
+				<hr>
+				<br>
+
+				<h2>
+					GitHub
+				</h2>
+
+				
+			</div>
+
+			<%= partial "/layouts/partials/footer" %>
+		</div>
+	</div>	
+</div>
