@@ -1,11 +1,11 @@
 -- Exercise 1
-SELECT * FROM teams.name WHERE division = 'North' AND conference = 'NFC';
+SELECT * FROM teams WHERE division = 'North' AND conference = 'NFC';
 
 -- Exercise 2
-SELECT * FROM teams.name WHERE wins >= 11;
+SELECT * FROM teams WHERE wins >= 11;
 
 -- Exercise 3
-SELECT * FROM teams.name WHERE wins >= 8 AND playoff = 0;
+SELECT * FROM teams WHERE wins >= 8 AND playoff = 0;
 
 -- Exercise 4
 UPDATE teams SET name = "Losers" WHERE wins < 4;
