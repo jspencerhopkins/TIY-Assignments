@@ -8,7 +8,7 @@ INSERT OR REPLACE INTO person (id, first_name, last_name, age)
 
 /* And shorthand for that is just REPLACE */
 REPLACE INTO person (id, first_name, last_name, age)
-	VALUES (0, 'Zed', 'Shaw'. 37)
+	VALUES (0, 'Zed', 'Shaw', 37);
 
 /* Now you can see I'm back */
 SELECT * FROM person;
