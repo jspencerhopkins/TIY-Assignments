@@ -29,5 +29,5 @@ State.joins(cities: :teams).map{|state| state.name}.uniq
 City.joins(:teams).sort_by{|city| city.population_2013}.map{|city| city.name}[0..2]
 
 # Ex 11 -- Find the number of teams in cities of between 1 million and 2 million (as of 2013)
-
+Team.joins(:city).where("population_2013 >= 1000000 AND population_2013 <= 5000000").map{|team| team.name}
 
